@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { Slide } from './ui/Slide';
 
+const slider = [
+    { text: 'Welcome to Jobber', color: '#03A9F4', image:require('../../assets/1.jpg')},
+    { text: 'Find jobs smooth and easy', color: '#009688', image:require('../../assets/2.png')},
+    { text: 'Swipe the jobs left and right', color: '#09B7E2', image:require('../../assets/3.jpg')}
+]
 class Welcome extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Welcome</Text>
-        <Text>Welcome</Text>
-        <Text>Welcome</Text>
-        <Text>Welcome</Text>
-        <Text>Rayu</Text>
-        <Text>Eashwar</Text>
-      </View>
+     <Slide data={slider}/>
     );
   }
 }
