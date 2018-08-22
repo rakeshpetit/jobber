@@ -8,9 +8,12 @@ const slider = [
     { text: 'Swipe the jobs left and right', color: '#09B7E2', image:require('../../assets/3.jpg')}
 ]
 class Welcome extends Component {
+    enterAuth = () => {
+        this.props.navigation.navigate('Auth');
+    }  
   render() {
     return (
-     <Slide data={slider}/>
+     <Slide enterAuth={this.enterAuth} data={slider}/>
     );
   }
 }

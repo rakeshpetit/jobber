@@ -10,8 +10,7 @@ export class Slide extends Component {
             return (<Button
                 raised                
                 title="Enter"
-                onPress={ () =>  {}          
-                }
+                onPress={this.props.enterAuth}
                 backgroundColor="rgba(0,0,0,0)"
                 color="black"
               />);
